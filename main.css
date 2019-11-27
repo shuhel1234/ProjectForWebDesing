@@ -1,0 +1,327 @@
+html, body {
+	height: 100%;
+	font-family: Courier;
+	scroll-behavior: smooth;
+}
+
+@media only screen and (max-width:961px){
+	body {
+		padding-top: 10%;
+	}
+}
+
+
+/* Desktop main screen style */
+@media only screen and (min-width: 480px) {
+	.bg-main {
+		background-image: url("images/background.jpg");
+		/* Full height */
+		height: 100%;
+		overflow: hidden;
+
+	  /* Center and scale the image nicely */
+		background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+}
+
+/* Mobile main screen style */
+@media only screen and (max-width:480px){
+	.bg-main {
+		margin-top: 30vw;
+		overflow: hidden;
+		background-image: url("images/background.jpg");
+
+		/* Full height */
+
+	  /* Center and scale the image nicely */
+	}
+}
+
+.bg-second {
+	background-color :#F5F5F5;
+}
+
+.spacing>li{
+	margin: 1.5vw;
+}
+
+/* Navbar non-Bootstrap styles */
+.header {
+	background: #F5F5F5;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	box-shadow: 0 5px 4px -1px rgba(0,0,0,.5);
+
+}
+
+.navbar-links li {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar-link-active {
+	border-bottom: 2px solid #e74c3c;
+}
+
+/* Style to add black shadow to text */
+.custom-container {
+	margin: 18vw auto;
+	width: 100%;
+	text-align: center;
+	text-shadow:
+       2px 2px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.logo>img {
+	height: 30%;
+	width: 30%;
+	-o-object-fit: contain;
+  object-fit: contain;
+}
+
+
+/* Mobile Main Title Style */
+
+.main-title {
+	font-family: Garamond;
+	font-weight: bold;
+	font-size: 12vw;
+	color: #F5F5F5;
+
+}
+
+.sub-title {
+	font-family: Garamond;
+	font-size: 40px;
+	color: white;
+}
+
+.smaller {
+	font-size: 30px;
+}
+
+/* Desktop CSS for About Portion */
+@media only screen and (min-width: 900px){
+	.main-content {
+		height: 100%;
+		display: grid;
+		grid-template-areas:
+				"text image";
+		column-gap: 3vw;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* Mobile CSS for About Portion */
+@media only screen and (max-width: 480px){
+	.main-content {
+		display: grid;
+		grid-template-areas:
+				"text"
+				"image";
+		grid-row-gap: 10vw;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.about-header {
+	font-size: 90px;
+	font-weight: bold;
+	font-family: Lobster;
+}
+
+.our-mission-text{
+	text-align: left;
+	font-size: 22px;
+	margin: 40px 40px;
+	grid-area: "text";
+}
+
+.our-mission-img {
+	object-fit: cover;
+	margin: 3vw 3vw;
+	min-width: 20px;
+	grid-area: "image";
+}
+
+.our-mission-img img{
+	max-width: 80%;
+	 min-width: 75%;
+	 border-radius: 30px;
+	 align-items: center;
+}
+
+
+#our-story {
+	top: -55px;
+	position:relative;
+}
+
+.contact-container {
+	margin: -8vw 1vw;
+}
+
+.contact-us-header {
+	font-size: 12vw;
+	font-family: Garamond bold;
+	color: white;
+}
+
+
+/* Searchbar Effects */
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+		display: flex;
+		overflow: hidden;
+}
+
+.search_input{
+		color: white;
+		border: 0;
+		outline: 0;
+		background: none;
+		width: 0;
+		caret-color:transparent;
+		line-height: 40px;
+		transition: width 0.2s linear;
+}
+
+.searchbar:hover > .search_input{
+		padding: 0 10px;
+		width: 100px;
+		caret-color:red;
+		transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+		background: white;
+		color: #e74c3c;
+}
+
+
+.search_icon{
+		height: 40px;
+		width: 40px;
+		float: right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		color:white;
+		text-decoration:none;
+}
+
+/* Social Media Button Styles */
+.socials {
+  margin: -20vw 36vw;
+	font-size: 30px;
+}
+
+
+.fa {
+  padding: 25px;
+  width: 80px;
+	height: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 9px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+		color: white;
+		text-decoration: none;
+		border: 4px solid white;
+		padding: 22px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+@media (min-width: px) and (max-width: 1300px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+.contact-container a{
+	text-decoration-style: none;
+	text-decoration: none;
+	color:white;
+}
+
+.white-border{
+	border-color:white;
+	border-width:1px;
+}
+
+/*  
+	Scroll Animation CSS
+*/
+
+.triggered {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s ease-out
+}
+
+.triggered2{
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s ease-out
+}
+
+.triggered3{
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s ease-out
+}
+
+.fade-in{
+	opacity: 1;
+	transform: translateY(0px);
+}
